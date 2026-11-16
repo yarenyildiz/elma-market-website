@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elma Market | Kurumsal</title>
+  <meta name="description" content="Elma Market; 2013'ten beri Hatay'da Karağaç, Arsuz ve Belen şubeleriyle taze, yerel ve organik ürünler sunan bölgesel market zinciri.">
+  <meta name="theme-color" content="#DA2128">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Elma Market">
+  <meta property="og:description" content="2013'ten beri Hatay'da; taze, güvenilir ve her zaman yakınınızda.">
+  <meta property="og:image" content="assets/img/hero-poster.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/brand/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__contact">
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+        Müşteri Hizmetleri: <a href="tel:+905015402531">0501 540 25 31</a>
+      </span>
+      <nav class="topbar__links" aria-label="Kısayollar">
+        <a href="#basin">Basın Odası</a>
+        <a href="#kariyer">Kariyer</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-logo" href="#" aria-label="Elma Market ana sayfa">
+        <img src="assets/img/brand/logo-horizontal.png" alt="Elma Market" width="1590" height="210">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#magazalarimiz">Mağazalarımız</a>
+        <a class="site-nav__highlight" href="#elma-express">Elma Express</a>
+        <a href="#surdurulebilirlik">Sürdürülebilirlik</a>
+        <a href="#basin">Haberler</a>
+        <a href="#kariyer">Kariyer</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="#elma-express">Uygulamayı İndir</a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Öne çıkanlar">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__slides">
+        <article class="hero__slide is-active">
+          <div class="container">
+            <div class="hero__content">
+              <span class="eyebrow eyebrow--light">2013'ten beri Hatay'da</span>
+              <h1 class="hero__title">Taze, güvenilir ve <br>her zaman yakınınızda.</h1>
+              <p class="hero__text">Karağaç, Arsuz ve Belen şubelerimizde her gün en taze ürünleri sofralarınıza ulaştırıyoruz.</p>
+              <a class="btn btn--light" href="#hakkimizda">Bizi Tanıyın</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="eyebrow eyebrow--light">Çok Yakında · Elma Express</span>
+              <h2 class="hero__title">Market alışverişi artık <br>cebinizde.</h2>
+              <p class="hero__text">Elma Express uygulamasını indirin, siparişiniz kapınıza gelsin.</p>
+              <a class="btn btn--light" href="#elma-express">Uygulamayı Keşfet</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="eyebrow eyebrow--light">Yerel &amp; Organik</span>
+              <h2 class="hero__title">Hatay'ın lezzetleri <br>Elma Market'te.</h2>
+              <p class="hero__text">Yerel üreticimizi destekliyor, organik ürünleri ve Hatay'ın eşsiz lezzetlerini sizinle buluşturuyoruz.</p>
+              <a class="btn btn--light" href="#surdurulebilirlik">Çalışmalarımız</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="hero__arrow hero__arrow--prev" id="hero-prev" type="button" aria-label="Önceki slayt">‹</button>
+      <button class="hero__arrow hero__arrow--next" id="hero-next" type="button" aria-label="Sonraki slayt">›</button>
+      <div class="hero__dots" id="hero-dots"></div>
+
+      <button class="hero__video-toggle" id="hero-video-toggle" type="button" aria-label="Arka plan videosunu durdur">
+        <svg class="icon icon-pause" aria-hidden="true"><use href="assets/img/icons.svg#pause"></use></svg>
+        <svg class="icon icon-play" aria-hidden="true"><use href="assets/img/icons.svg#play"></use></svg>
+      </button>
+    </section>
+
+    <section class="stats section--soft" aria-labelledby="stats-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <h2 class="section-title" id="stats-title">Rakamlarla Elma Market</h2>
+        </div>
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <span class="stat__value" data-count="2013" data-count-plain>2013</span>
+            <p class="stat__label">Kuruluş yılı</p>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value" data-count="3">3</span>
+            <p class="stat__label">Şube</p>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="13">13</span>+</span>
+            <p class="stat__label">Yıllık tecrübe</p>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="8000">8.000</span>+</span>
+            <p class="stat__label">Ürün çeşidi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="hakkimizda">
+      <div class="container about__grid">
+        <figure class="about__media reveal-wipe">
+          <div class="about__frame">
+            <img src="assets/img/illustrations/belen-store.svg" alt="Elma Market Belen Sarımazı şubesinin animasyonlu çizimi" width="800" height="450">
+          </div>
+          <figcaption class="about__location">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#map-pin"></use></svg>
+            Belen Sarımazı Şubemiz
+          </figcaption>
+          <ul class="about__highlights" aria-label="Öne çıkan özellikler">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#apple"></use></svg>Taze</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#leaf"></use></svg>Organik</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#sprout"></use></svg>Yerel</li>
+          </ul>
+        </figure>
+
+        <div class="about__body reveal">
+          <span class="eyebrow">Hakkımızda</span>
+          <h2 class="section-title">Elma Market'i Tanıyın</h2>
+          <p class="about__lead">Elma Market'in hikâyesi 2013 yılında başladı.</p>
+          <p>Geçen yıllar içinde kalitemizden ve tazeliğimizden hiçbir zaman ödün vermeden büyüdük; Karağaç, Arsuz ve Belen şubelerimizi açarak daha fazla kapıya ulaştık. Yolculuğumuz boyunca yerel üreticimizin yanında olduk, organik ürünleri raflarımıza taşıdık ve Hatay'ın eşsiz lezzetlerini daha geniş kitlelere ulaştırmak için çalıştık.</p>
+          <p>Bizim için her müşteri bir komşudur. Mağazalarımıza adım atan herkesin kendini evinde hissetmesi en büyük önceliğimizdir.</p>
+
+          <ul class="branch-list" aria-label="Şubelerimiz">
+            <li>Karağaç</li>
+            <li>Arsuz</li>
+            <li>Belen</li>
+          </ul>
+
+          <div class="tabs" data-tabs>
+            <div class="tabs__list" role="tablist" aria-label="Kurumsal ilkelerimiz">
+              <button class="tabs__tab" id="tab-vision" type="button" role="tab" aria-selected="true" aria-controls="panel-vision">Vizyon</button>
+              <button class="tabs__tab" id="tab-mission" type="button" role="tab" aria-selected="false" aria-controls="panel-mission" tabindex="-1">Misyon</button>
+              <button class="tabs__tab" id="tab-values" type="button" role="tab" aria-selected="false" aria-controls="panel-values" tabindex="-1">Değerlerimiz</button>
+            </div>
+            <div class="tabs__panel" id="panel-vision" role="tabpanel" aria-labelledby="tab-vision">
+              Hatay'ın tazelik ve güven denildiğinde ilk akla gelen marketi olmak; yerel üreticiyi ve bölgemizin lezzet kültürünü büyüterek Hatay'ın tadını her sofraya taşımak.
+            </div>
+            <div class="tabs__panel" id="panel-mission" role="tabpanel" aria-labelledby="tab-mission" hidden>
+              Taze, kaliteli ve organik ürünleri uygun fiyatlarla sunmak; yerel üreticiyle güçlü bağlar kurarak bölge ekonomisine katkı sağlamak ve her müşterimizi bir komşu sıcaklığıyla karşılamak.
+            </div>
+            <div class="tabs__panel" id="panel-values" role="tabpanel" aria-labelledby="tab-values" hidden>
+              <ul class="check-list">
+                <li>Tazelik ve kaliteden asla ödün vermemek</li>
+                <li>Yerel üreticinin her zaman yanında olmak</li>
+                <li>Hatay'ın lezzet mirasını yaşatmak</li>
+                <li>Müşterilerimize komşumuz gibi yaklaşmak</li>
+                <li>Dürüst, şeffaf ve güvenilir olmak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft channels" id="magazalarimiz">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="eyebrow">Markalarımız</span>
+          <h2 class="section-title">Size Ulaştığımız Kanallar</h2>
+        </div>
+        <div class="channels__grid">
+          <article class="channel-card reveal">
+            <div class="channel-card__icon channel-card__icon--red">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#store"></use></svg>
+            </div>
+            <h3>Elma Market</h3>
+            <p>Karağaç, Arsuz ve Belen şubelerimizde geniş ürün çeşidi ve taze reyonlar.</p>
+            <a class="link-arrow" href="#iletisim">Mağazalarımız →</a>
+          </article>
+          <article class="channel-card channel-card--featured reveal">
+            <span class="channel-card__badge">Çok Yakında</span>
+            <div class="channel-card__icon channel-card__icon--green">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#truck"></use></svg>
+            </div>
+            <h3>Elma Express</h3>
+            <p>Mobil uygulamamızdan sipariş verin, kısa sürede kapınıza gelsin.</p>
+            <a class="link-arrow" href="#elma-express">Uygulamayı İncele →</a>
+          </article>
+          <article class="channel-card reveal">
+            <div class="channel-card__icon channel-card__icon--amber">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#credit-card"></use></svg>
+            </div>
+            <h3>Elma Kart</h3>
+            <p>Her alışverişte puan kazanın, size özel kampanyalardan yararlanın.</p>
+            <a class="link-arrow" href="#elma-express">Detaylı Bilgi →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section express" id="elma-express">
+      <div class="container express__grid">
+        <div class="reveal">
+          <div class="express__brand">
+            <span class="express__logo">
+              <img src="assets/img/brand/logo-mark.png" alt="" width="600" height="685">
+              elma<b>express</b>
+            </span>
+            <span class="status-badge">Çok Yakında</span>
+          </div>
+          <h2 class="express__title">Market alışverişi <br>birkaç dokunuşla.</h2>
+          <p>Elma Express uygulamasıyla binlerce ürünü inceleyin, sepetinizi oluşturun ve siparişinizi kapınıza getirelim.</p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#zap"></use></svg></span>
+              <div><strong>Hızlı teslimat</strong>Siparişiniz kısa sürede kapınızda</div>
+            </li>
+            <li>
+              <span class="feature-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#tag"></use></svg></span>
+              <div><strong>Uygulamaya özel fırsatlar</strong>Her hafta yenilenen kampanyalar</div>
+            </li>
+            <li>
+              <span class="feature-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#navigation"></use></svg></span>
+              <div><strong>Canlı sipariş takibi</strong>Kuryenizin nerede olduğunu görün</div>
+            </li>
+            <li>
+              <span class="feature-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#lock"></use></svg></span>
+              <div><strong>Güvenli ödeme</strong>Kapıda veya uygulamadan ödeme</div>
+            </li>
+          </ul>
+
+          <div class="store-links">
+            <a class="store-link" href="#" data-store="ios">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#app-store"></use></svg>
+              <span><small>Çok yakında</small>App Store</span>
+            </a>
+            <a class="store-link" href="#" data-store="android">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#google-play"></use></svg>
+              <span><small>Çok yakında</small>Google Play</span>
+            </a>
+          </div>
+
+          <p class="express__note">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#info"></use></svg>
+            Elma Express çok yakında App Store ve Google Play'de. Siparişler yalnızca uygulama üzerinden alınacaktır.
+          </p>
+        </div>
+
+        <div class="device-showcase reveal" aria-label="Elma Express uygulama ekranları">
+          <div class="device device--left" data-app-preview>
+            <div class="device__screen">
+              <div class="app-bar">Kategoriler</div>
+              <ul class="app-categories">
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#apple"></use></svg><span>Meyve</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#carrot"></use></svg><span>Sebze</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#milk"></use></svg><span>Süt</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#egg"></use></svg><span>Kahvaltı</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#bread"></use></svg><span>Fırın</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#cup"></use></svg><span>İçecek</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#leaf"></use></svg><span>Organik</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#utensils"></use></svg><span>Yöresel</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#sparkles"></use></svg><span>Temizlik</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="device device--center" data-app-preview>
+            <div class="device__screen">
+              <div class="app-header">
+                <div class="app-header__brand">elma<b>express</b></div>
+                <div class="app-header__address">
+                  <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#map-pin"></use></svg>
+                  Ev · 15-20 dk
+                </div>
+              </div>
+              <div class="app-search">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#search"></use></svg>
+                Ürün ara…
+              </div>
+              <div class="app-promo">
+                <strong>Haftanın Fırsatları</strong>
+                <small>%30'a varan indirim</small>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#tag"></use></svg>
+              </div>
+              <div class="app-section-title">Çok Satanlar</div>
+              <div class="app-products">
+                <div class="app-product">
+                  <div class="app-product__image"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#apple"></use></svg></div>
+                  <small>Elma 1 kg</small>
+                  <strong>₺39,90</strong>
+                  <span class="app-product__add">+</span>
+                </div>
+                <div class="app-product">
+                  <div class="app-product__image"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#milk"></use></svg></div>
+                  <small>Süt 1 L</small>
+                  <strong>₺32,50</strong>
+                  <span class="app-product__add">+</span>
+                </div>
+                <div class="app-product">
+                  <div class="app-product__image"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#egg"></use></svg></div>
+                  <small>Yumurta 10'lu</small>
+                  <strong>₺64,90</strong>
+                  <span class="app-product__add">+</span>
+                </div>
+                <div class="app-product">
+                  <div class="app-product__image"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#carrot"></use></svg></div>
+                  <small>Havuç 1 kg</small>
+                  <strong>₺24,90</strong>
+                  <span class="app-product__add">+</span>
+                </div>
+              </div>
+              <div class="app-tabbar">
+                <svg class="icon is-current" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#search"></use></svg>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#cart"></use></svg>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#user"></use></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="device device--right" data-app-preview>
+            <div class="device__screen">
+              <div class="app-bar">Siparişim Yolda</div>
+              <div class="app-map">
+                <span class="app-map__route"></span>
+                <span class="app-map__pin app-map__pin--store"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#store"></use></svg></span>
+                <span class="app-map__pin app-map__pin--courier"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#truck"></use></svg></span>
+                <span class="app-map__pin app-map__pin--home"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg></span>
+              </div>
+              <div class="app-tracking">
+                <strong>Tahmini varış: 12 dk</strong>
+                <ol>
+                  <li class="is-done">Sipariş alındı</li>
+                  <li class="is-done">Hazırlandı</li>
+                  <li class="is-current">Yolda</li>
+                  <li>Teslim edildi</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values" id="surdurulebilirlik">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="eyebrow">Sürdürülebilirlik</span>
+          <h2 class="section-title">Yerelden Gelen Güç</h2>
+        </div>
+        <div class="values__grid">
+          <article class="value-card reveal">
+            <span class="value-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#sprout"></use></svg></span>
+            <h3>Yerel Üretici</h3>
+            <p>Ürünlerimizin önemli bir kısmını Hatay'daki üreticilerimizden doğrudan temin ediyoruz.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#leaf"></use></svg></span>
+            <h3>Organik Ürünler</h3>
+            <p>Doğal ve organik ürün seçeneklerimizi her geçen gün artırıyoruz.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#utensils"></use></svg></span>
+            <h3>Hatay Lezzetleri</h3>
+            <p>Zeytinyağından nar ekşisine, künefeden biber salçasına yöresel tatları yaşatıyoruz.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#recycle"></use></svg></span>
+            <h3>Gıda İsrafıyla Mücadele</h3>
+            <p>İsrafı azaltmak için stoklarımızı titizlikle yönetiyor, geri dönüşümü destekliyoruz.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft press" id="basin">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Basın Odası</span>
+          <h2 class="section-title">Basında Elma Market</h2>
+        </div>
+        <div class="press__grid">
+          <article class="press-card reveal">
+            <button class="press-card__media" type="button"
+                    data-gallery="assets/img/press/2025-belen-1.jpg, assets/img/press/2025-belen-2.jpg, assets/img/press/2025-belen-3.jpg, assets/img/press/2025-belen-4.jpg, assets/img/press/2025-belen-5.jpg, assets/img/press/2025-belen-6.jpg"
+                    data-caption="Elma Market 3. Şubesini Belen'de Hizmete Açtı"
+                    aria-label="Belen açılışı fotoğraflarını aç">
+              <img src="assets/img/press/2025-belen-1.jpg" alt="Elma Market Belen şubesinin açılış töreni" loading="lazy">
+              <span class="press-card__count"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#camera"></use></svg>6 fotoğraf</span>
+            </button>
+            <div class="press-card__meta">
+              <span class="press-card__outlet">İskenderun Org</span>
+              <time datetime="2025-10-24">24 Ekim 2025</time>
+            </div>
+            <h3>Elma Market 3. Şubesini Belen'de Hizmete Açtı</h3>
+            <p>Sarımazı mevkiindeki 600 metrekarelik yeni şubemiz törenle açıldı ve 8 binden fazla ürün çeşidiyle hizmet vermeye başladı.</p>
+            <a class="link-arrow press-card__link" href="https://iskenderun.org/elma-market-3-subesini-belende-hizmete-acti" target="_blank" rel="noopener">Haberin tamamı →</a>
+          </article>
+
+          <article class="press-card reveal">
+            <button class="press-card__media" type="button"
+                    data-video="FB6oGNpupCg"
+                    data-caption="Elma Market, Belen'de 3. Şubesini Hizmete Açtı"
+                    aria-label="Belen açılış videosunu oynat">
+              <img src="assets/img/press/2025-belen-video.jpg" alt="Belen şubesi açılış videosundan bir kare" loading="lazy">
+              <span class="press-card__play"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#play"></use></svg></span>
+              <span class="press-card__count">Video · 3 dk</span>
+            </button>
+            <div class="press-card__meta">
+              <span class="press-card__outlet">iskenderunorg TV</span>
+              <time datetime="2025-10-24">24 Ekim 2025</time>
+            </div>
+            <h3>Elma Market, Belen'de 3. Şubesini Hizmete Açtı</h3>
+            <p>Belen şubemizin açılış töreninden görüntüler ve konuşmalar, video haber olarak yayımlandı.</p>
+            <a class="link-arrow press-card__link" href="https://www.youtube.com/watch?v=FB6oGNpupCg" target="_blank" rel="noopener">YouTube'da izle →</a>
+          </article>
+
+          <article class="press-card reveal">
+            <button class="press-card__media" type="button"
+                    data-gallery="assets/img/press/2021-arsuz-1.jpg, assets/img/press/2021-arsuz-2.jpg, assets/img/press/2021-arsuz-3.jpg, assets/img/press/2021-arsuz-4.jpg, assets/img/press/2021-arsuz-5.jpg, assets/img/press/2021-arsuz-6.jpg"
+                    data-caption="5 'Yıldız'lı alışverişin adresi; Elma Market"
+                    aria-label="Arsuz açılışı fotoğraflarını aç">
+              <img src="assets/img/press/2021-arsuz-1.jpg" alt="Elma Market Arsuz şubesinin açılış töreni" loading="lazy">
+              <span class="press-card__count"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#camera"></use></svg>6 fotoğraf</span>
+            </button>
+            <div class="press-card__meta">
+              <span class="press-card__outlet">Söz Gazetesi</span>
+              <time datetime="2021-10-18">18 Ekim 2021</time>
+            </div>
+            <h3>5 'Yıldız'lı alışverişin adresi; Elma Market</h3>
+            <p>Konarlı'daki Arsuz şubemizin açılışını anlatan haberde; kaliteli, hijyenik ve hesaplı alışveriş anlayışımıza yer veriliyor.</p>
+            <a class="link-arrow press-card__link" href="https://sozgazetesi.com.tr/2021/10/18/5-yildizli-alisverisin-adresi-elma-market/" target="_blank" rel="noopener">Haberin tamamı →</a>
+          </article>
+
+          <article class="press-card reveal">
+            <button class="press-card__media" type="button"
+                    data-gallery="assets/img/press/2021-arsuz-org-1.jpg"
+                    data-caption="Elma Market İkinci Şubesini Arsuz'da Açtı"
+                    aria-label="Arsuz haber görselini aç">
+              <img src="assets/img/press/2021-arsuz-org-1.jpg" alt="Elma Market Arsuz şubesi açılışı haber görseli" loading="lazy">
+            </button>
+            <div class="press-card__meta">
+              <span class="press-card__outlet">İskenderun Org</span>
+              <time datetime="2021-10-18">18 Ekim 2021</time>
+            </div>
+            <h3>Elma Market İkinci Şubesini Arsuz'da Açtı</h3>
+            <p>İskenderun–Arsuz yolu üzerinde açtığımız Arsuz şubemiz haberde yer aldı.</p>
+            <a class="link-arrow press-card__link" href="https://www.iskenderun.org/elma-market-ikinci-subesini-arsuzda-acti" target="_blank" rel="noopener">Haberin tamamı →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="career" id="kariyer">
+      <div class="container">
+        <div class="career__banner reveal">
+          <div>
+            <h2>Elma Market ailesine katılın</h2>
+            <p>Kasiyerlikten reyon görevliliğine, kuryelikten mağaza yönetimine kadar birçok pozisyonda yeni arkadaşlar arıyoruz.</p>
+          </div>
+          <a class="btn btn--light" href="mailto:kariyer@elmamarket.com.tr">Başvuru Yap</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="iletisim">
+      <div class="container contact__grid">
+        <div class="reveal">
+          <span class="eyebrow">İletişim</span>
+          <h2 class="section-title">Bize Ulaşın</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#map-pin"></use></svg></span>
+              <address><strong>Genel Merkez</strong>Fatih, Sokullu Mehmet Paşa Caddesi No:81, 31350 Belen/Hatay</address>
+            </li>
+            <li>
+              <span class="contact-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#store"></use></svg></span>
+              <div><strong>Şubelerimiz</strong>Karağaç · Arsuz · Belen</div>
+            </li>
+            <li>
+              <span class="contact-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg></span>
+              <div><strong>Telefon</strong><a href="tel:+905015402531">0501 540 25 31</a></div>
+            </li>
+            <li>
+              <span class="contact-list__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#clock"></use></svg></span>
+              <div><strong>Çalışma Saatleri</strong>Her gün 08:00 – 22:00</div>
+            </li>
+          </ul>
+        </div>
+        <div class="map reveal">
+          <iframe title="Elma Market Genel Merkez haritası" src="https://www.google.com/maps?q=ELMA+MANAV+MARKET+-+SARIMAZI+%C5%9EUBE&amp;ll=36.5339479,36.1467747&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <a class="map__directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=36.5339479,36.1467747" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#navigation"></use></svg>
+            Yol tarifi al
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <img class="site-footer__logo" src="assets/img/brand/logo-horizontal-light.png" alt="Elma Market" width="1590" height="210">
+        <p>2013'ten beri Hatay'da; taze, güvenilir ve her zaman yakınınızda.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <nav class="site-footer__links" aria-label="Kurumsal">
+        <h4>Kurumsal</h4>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#magazalarimiz">Mağazalarımız</a>
+        <a href="#surdurulebilirlik">Sürdürülebilirlik</a>
+        <a href="#basin">Haberler</a>
+      </nav>
+      <nav class="site-footer__links" aria-label="Elma Express">
+        <h4>Elma Express</h4>
+        <a href="#" data-store="ios">App Store</a>
+        <a href="#" data-store="android">Google Play</a>
+        <a href="#elma-express">Uygulama Hakkında</a>
+      </nav>
+      <nav class="site-footer__links" aria-label="Yasal">
+        <h4>Yasal</h4>
+        <a href="#">KVKK Aydınlatma Metni</a>
+        <a href="#">Çerez Politikası</a>
+        <a href="#">Gizlilik Politikası</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="site-footer__bottom">© <span id="current-year">2026</span> Elma Market. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="app-modal" role="dialog" aria-modal="true" aria-labelledby="app-modal-title" hidden>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Kapat">×</button>
+      <div class="modal__icon"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#smartphone"></use></svg></div>
+      <h3 id="app-modal-title">Elma Express çok yakında!</h3>
+      <p>Uygulamamız çok yakında App Store ve Google Play'de olacak. Siparişlerinizi uygulama üzerinden verebileceksiniz.</p>
+      <div class="store-links store-links--center">
+        <a class="store-link" href="#" data-store="ios"><span><small>Çok yakında</small>App Store</span></a>
+        <a class="store-link" href="#" data-store="android"><span><small>Çok yakında</small>Google Play</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Medya galerisi" hidden>
+    <button class="lightbox__close" type="button" aria-label="Kapat">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Önceki fotoğraf">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" alt="">
+      <div class="lightbox__video"></div>
+      <figcaption class="lightbox__caption">
+        <span class="lightbox__title"></span>
+        <span class="lightbox__counter"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Sonraki fotoğraf">›</button>
+  </div>
+</body>
+</html>

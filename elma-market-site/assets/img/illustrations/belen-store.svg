@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">Elma Market Belen Sarımazı store illustration</title>
+
+  <style>
+    .rays, .wing, .tree, .flag, .leg, .spin, .building { transform-box: fill-box; }
+
+    .rays { transform-origin: center; animation: spin 18s linear infinite; }
+    .cloud { animation: drift 46s linear infinite; }
+    .cloud--slow { animation-duration: 62s; animation-delay: -30s; }
+    .cloud--mid { animation-duration: 54s; animation-delay: -12s; }
+    .bird { animation: fly 18s linear infinite; }
+    .wing { transform-origin: center; animation: flap .45s ease-in-out infinite alternate; }
+    .tree { transform-origin: 50% 100%; animation: sway 3.2s ease-in-out infinite alternate; }
+    .garland { animation: bob 2.4s ease-in-out infinite alternate; }
+    .garland--offset { animation-delay: -1.2s; }
+    .balloon { opacity: 0; animation: rise 10s ease-in infinite; }
+    .flag { transform-origin: 0 50%; animation: wave 1.6s ease-in-out infinite alternate; }
+    .building { transform-origin: 50% 100%; animation: breathe 3s ease-in-out infinite; }
+    .walker { animation: walk 18s linear infinite; }
+    .walker__body { animation: bob .35s ease-in-out infinite alternate; }
+    .leg { transform-origin: 50% 0; animation: step .35s ease-in-out infinite alternate; }
+    .leg--back { animation-direction: alternate-reverse; }
+    .driving { animation: drive 7s linear infinite; }
+    .spin { transform-origin: center; animation: spin .5s linear infinite; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes drift { from { transform: translateX(-260px); } to { transform: translateX(900px); } }
+    @keyframes fly {
+      0% { transform: translate(-80px, 10px); }
+      50% { transform: translate(400px, -12px); }
+      100% { transform: translate(880px, 6px); }
+    }
+    @keyframes flap { to { transform: scaleY(.35); } }
+    @keyframes sway { from { transform: rotate(-3deg); } to { transform: rotate(3deg); } }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(4px); } }
+    @keyframes rise {
+      0% { transform: translate(0, 40px); opacity: 0; }
+      10% { opacity: 1; }
+      50% { transform: translate(14px, -110px); }
+      85% { opacity: 1; }
+      100% { transform: translate(-8px, -240px); opacity: 0; }
+    }
+    @keyframes wave { from { transform: skewY(0deg) scaleX(1); } to { transform: skewY(-7deg) scaleX(.88); } }
+    @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.012, .992); } }
+    @keyframes walk { from { transform: translateX(80px); } to { transform: translateX(720px); } }
+    @keyframes step { from { transform: rotate(-22deg); } to { transform: rotate(22deg); } }
+    @keyframes drive { from { transform: translateX(-90px); } to { transform: translateX(900px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .balloon { opacity: 1; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9FD8FF"/>
+      <stop offset="1" stop-color="#E8F7FF"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86CF6E"/>
+      <stop offset="1" stop-color="#5DB45A"/>
+    </linearGradient>
+
+    <symbol id="cloud" overflow="visible">
+      <ellipse cx="0" cy="10" rx="58" ry="20"/>
+      <circle cx="-22" cy="0" r="22"/>
+      <circle cx="8" cy="-10" r="28"/>
+      <circle cx="34" cy="4" r="18"/>
+    </symbol>
+
+    <symbol id="tree-shape" overflow="visible">
+      <rect x="-5" y="0" width="10" height="26" rx="4" fill="#8A5A34"/>
+      <circle cx="0" cy="-14" r="24" fill="#3E9B4F"/>
+      <circle cx="-14" cy="-2" r="16" fill="#3E9B4F"/>
+      <circle cx="14" cy="-2" r="16" fill="#3E9B4F"/>
+      <circle cx="-7" cy="-20" r="7" fill="#5FBF6A"/>
+    </symbol>
+
+    <symbol id="car-body" overflow="visible">
+      <rect x="-30" y="-12" width="60" height="20" rx="9"/>
+      <path d="M-17 -12q4-14 17-14t17 14z"/>
+      <path d="M-12 -12q3-9 12-9t12 9z" fill="#CFEFFF"/>
+      <circle cx="24" cy="-3" r="3" fill="#FFE27A"/>
+    </symbol>
+
+    <symbol id="wheel" overflow="visible">
+      <circle r="7" fill="#2B2F36"/>
+      <circle r="3" fill="#C9CED6"/>
+      <rect x="-.8" y="-6" width="1.6" height="4" fill="#C9CED6"/>
+    </symbol>
+
+    <symbol id="balloon" overflow="visible">
+      <path d="M0 16q-4 10 2 18q-5 8 0 16" stroke="#8C8C8C" stroke-width="1.2" fill="none"/>
+      <ellipse rx="12" ry="15"/>
+      <path d="M-3 14h6l-3 4z"/>
+      <ellipse cx="-4" cy="-6" rx="3" ry="5" fill="#fff" opacity=".55"/>
+    </symbol>
+
+    <symbol id="banner" overflow="visible">
+      <path d="M1.5 2q22 4 20 30q-2 20-20 26z" fill="#fff" stroke="#DA2128" stroke-width="1.5"/>
+      <path d="M1.5 30q12 0 14-6v26q-6 6-14 8z" fill="#DA2128"/>
+      <circle cx="9" cy="14" r="5" fill="#52AE48"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#sky)"/>
+
+  <g transform="translate(705 72)">
+    <g class="rays" fill="#FFC93C">
+      <rect x="-4" y="-62" width="8" height="18" rx="4"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(30)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(60)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(90)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(120)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(150)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(180)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(210)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(240)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(270)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(300)"/>
+      <rect x="-4" y="-62" width="8" height="18" rx="4" transform="rotate(330)"/>
+    </g>
+    <circle r="34" fill="#FFD84D" stroke="#FFC12E" stroke-width="4"/>
+    <circle cx="-11" cy="-5" r="3.5" fill="#6B4A1F"/>
+    <circle cx="11" cy="-5" r="3.5" fill="#6B4A1F"/>
+    <path d="M-12 8q12 11 24 0" stroke="#6B4A1F" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <circle cx="-20" cy="6" r="5" fill="#FF9E7A" opacity=".6"/>
+    <circle cx="20" cy="6" r="5" fill="#FF9E7A" opacity=".6"/>
+  </g>
+
+  <g fill="#fff">
+    <g class="cloud"><use href="#cloud" xlink:href="#cloud" transform="translate(120 60)"/></g>
+    <g class="cloud cloud--slow"><use href="#cloud" xlink:href="#cloud" transform="translate(430 45) scale(.75)"/></g>
+    <g class="cloud cloud--mid"><use href="#cloud" xlink:href="#cloud" transform="translate(-80 110) scale(.6)"/></g>
+  </g>
+
+  <g stroke="#3D4A5C" stroke-width="3" fill="none" stroke-linecap="round">
+    <g class="bird"><path class="wing" d="M0 95q8-9 16 0q8-9 16 0"/></g>
+    <g class="bird" style="animation-delay: -3s"><path class="wing" d="M30 80q8-9 16 0q8-9 16 0"/></g>
+    <g class="bird" style="animation-delay: -6s"><path class="wing" d="M55 100q8-9 16 0q8-9 16 0"/></g>
+  </g>
+
+  <path d="M0 235 110 125 205 205 330 100 455 210 585 120 720 200 800 160V450H0Z" fill="#B9D7E3"/>
+  <path d="M330 100 300 128 318 124 330 138 344 122 362 128ZM110 125 88 146 104 142 114 152 126 140Z" fill="#fff" opacity=".9"/>
+  <path d="M0 262Q120 200 250 240T520 228T800 238V450H0Z" fill="url(#hill)"/>
+
+  <g transform="translate(30 255)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape"/></g>
+  <g transform="translate(85 240) scale(.8)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -.7s"/></g>
+  <g transform="translate(150 238) scale(.9)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -1.4s"/></g>
+  <g transform="translate(200 246) scale(.7)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -4.9s"/></g>
+  <g transform="translate(612 232) scale(.85)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -2.1s"/></g>
+  <g transform="translate(668 245)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -2.8s"/></g>
+  <g transform="translate(730 236) scale(.8)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -3.5s"/></g>
+  <g transform="translate(775 250) scale(.9)"><use class="tree" href="#tree-shape" xlink:href="#tree-shape" style="animation-delay: -4.2s"/></g>
+
+  <rect y="322" width="800" height="128" fill="#D9DDE1"/>
+  <rect y="404" width="800" height="46" fill="#A5ACB4"/>
+  <path d="M0 427H800" stroke="#fff" stroke-width="4" stroke-dasharray="26 22"/>
+  <path d="M40 340l-8 50M122 340l-8 50M204 340l-8 50M286 340l-8 50M368 340l-8 50M450 340l-8 50M532 340l-8 50M614 340l-8 50M696 340l-8 50M778 340l-8 50"
+        stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+
+  <g class="building">
+    <rect x="225" y="186" width="350" height="140" rx="10" fill="#45505F"/>
+    <path d="M212 192 400 148 588 192Z" fill="#323A46" stroke="#323A46" stroke-width="8" stroke-linejoin="round"/>
+    <g fill="#CFEFFF" stroke="#fff" stroke-width="3">
+      <rect x="340" y="198" width="30" height="22" rx="4"/>
+      <rect x="430" y="198" width="30" height="22" rx="4"/>
+    </g>
+
+    <g class="flag">
+      <rect x="236" y="196" width="56" height="38" rx="3" fill="#E30A17"/>
+      <circle cx="257" cy="215" r="10" fill="#fff"/>
+      <circle cx="260" cy="215" r="8" fill="#E30A17"/>
+      <polygon points="270,215 279.5,211.9 273.6,220 273.6,210 279.5,218.1" fill="#fff"/>
+    </g>
+
+    <rect x="240" y="242" width="320" height="38" rx="8" fill="#DA2128"/>
+    <g transform="translate(262 261)" fill="#52AE48">
+      <path d="M0-9c-3-4-10-4-12 1-3 6 0 14 5 17 2 1 4 0 7 0s5 1 7 0c5-3 8-11 5-17-2-5-9-5-12-1z"/>
+      <path d="M1-9q2-6 7-7q-1 6-7 7z"/>
+    </g>
+    <text x="412" y="270" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="25" fill="#fff" letter-spacing="-.5">elma market</text>
+
+    <rect x="248" y="288" width="30" height="34" rx="4" fill="#7AC4F2"/>
+    <rect x="522" y="288" width="30" height="34" rx="4" fill="#FFD84D"/>
+
+    <g font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="7" fill="#fff" text-anchor="middle">
+      <rect x="318" y="292" width="30" height="34" rx="15" fill="#22272E"/>
+      <rect x="315" y="283" width="36" height="10" rx="3" fill="#DA2128"/>
+      <text x="333" y="291">ÇIKIŞ</text>
+      <rect x="452" y="292" width="30" height="34" rx="15" fill="#22272E"/>
+      <rect x="449" y="283" width="36" height="10" rx="3" fill="#DA2128"/>
+      <text x="467" y="291">GİRİŞ</text>
+    </g>
+
+    <g fill="none" stroke-linecap="round">
+      <path d="M311 312A22 26 0 0 1 355 312M445 312A22 26 0 0 1 489 312" stroke="#E8262D" stroke-width="10" stroke-dasharray="0 9.9"/>
+      <path d="M311 312A22 26 0 0 1 355 312M445 312A22 26 0 0 1 489 312" stroke="#fff" stroke-width="7.5" stroke-dasharray="0 19.8" stroke-dashoffset="-9.9"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <g class="garland">
+      <path d="M400 150Q220 236 40 262M400 150Q247.5 205 95 228" stroke="#E8262D" stroke-width="1.5"/>
+      <path d="M400 150Q220 236 40 262M400 150Q247.5 205 95 228" stroke="#D11C24" stroke-width="13.5" stroke-dasharray="0 14.2"/>
+      <path d="M400 150Q220 236 40 262M400 150Q247.5 205 95 228" stroke="#E8262D" stroke-width="12" stroke-dasharray="0 14.2"/>
+      <path d="M400 150Q220 236 40 262M400 150Q247.5 205 95 228" stroke="#fff" stroke-width="10.5" stroke-dasharray="0 28.4" stroke-dashoffset="-14.2"/>
+    </g>
+    <g class="garland garland--offset">
+      <path d="M400 150Q580 236 760 262M400 150Q552.5 205 705 228" stroke="#E8262D" stroke-width="1.5"/>
+      <path d="M400 150Q580 236 760 262M400 150Q552.5 205 705 228" stroke="#D11C24" stroke-width="13.5" stroke-dasharray="0 14.2"/>
+      <path d="M400 150Q580 236 760 262M400 150Q552.5 205 705 228" stroke="#E8262D" stroke-width="12" stroke-dasharray="0 14.2"/>
+      <path d="M400 150Q580 236 760 262M400 150Q552.5 205 705 228" stroke="#fff" stroke-width="10.5" stroke-dasharray="0 28.4" stroke-dashoffset="-14.2"/>
+    </g>
+  </g>
+
+  <g class="balloon" style="color: #E8262D"><use href="#balloon" xlink:href="#balloon" transform="translate(300 180)" fill="currentColor"/></g>
+  <g class="balloon" style="color: #52AE48; animation-delay: -2.5s"><use href="#balloon" xlink:href="#balloon" transform="translate(505 180)" fill="currentColor"/></g>
+  <g class="balloon" style="color: #FFD84D; animation-delay: -5s"><use href="#balloon" xlink:href="#balloon" transform="translate(560 180)" fill="currentColor"/></g>
+  <g class="balloon" style="color: #fff; animation-delay: -6.5s"><use href="#balloon" xlink:href="#balloon" transform="translate(250 180)" fill="currentColor"/></g>
+
+  <g transform="translate(70 375) scale(.9)" fill="#F4F5F7">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+  <g transform="translate(150 375) scale(.9)" fill="#7D8794">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+  <g transform="translate(232 375) scale(.9)" fill="#2E7D6B">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+  <g transform="translate(566 375) scale(.9)" fill="#F4F5F7">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+  <g transform="translate(646 375) scale(.9)" fill="#C9343B">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+  <g transform="translate(726 375) scale(.9)" fill="#F4F5F7">
+    <use href="#car-body" xlink:href="#car-body"/>
+    <use href="#wheel" xlink:href="#wheel" x="-17" y="9"/>
+    <use href="#wheel" xlink:href="#wheel" x="17" y="9"/>
+  </g>
+
+  <g transform="translate(150 338)">
+    <rect x="-1.5" width="3" height="66" fill="#6B7380"/>
+    <use class="flag" href="#banner" xlink:href="#banner"/>
+  </g>
+  <g transform="translate(400 338)">
+    <rect x="-1.5" width="3" height="66" fill="#6B7380"/>
+    <use class="flag" href="#banner" xlink:href="#banner" style="animation-delay: -.5s"/>
+  </g>
+  <g transform="translate(650 338)">
+    <rect x="-1.5" width="3" height="66" fill="#6B7380"/>
+    <use class="flag" href="#banner" xlink:href="#banner" style="animation-delay: -1s"/>
+  </g>
+
+  <g class="walker">
+    <g transform="translate(0 362)">
+      <g class="walker__body">
+        <circle cy="-34" r="8" fill="#F2C9A0"/>
+        <path d="M-8-36q8-10 16 0q-2-8-8-8t-8 8z" fill="#5A3A22"/>
+        <circle cx="3" cy="-34" r="1.4" fill="#333"/>
+        <path d="M1-30q3 2 5 0" stroke="#333" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <rect x="-7" y="-26" width="14" height="20" rx="6" fill="#52AE48"/>
+        <rect x="8" y="-16" width="11" height="12" rx="2" fill="#fff" stroke="#DA2128" stroke-width="1.5"/>
+        <path d="M10-16q3.5-5 7 0" stroke="#DA2128" stroke-width="1.5" fill="none"/>
+      </g>
+      <g stroke="#2D3E66" stroke-width="5" stroke-linecap="round">
+        <path class="leg" d="M-3-7v14"/>
+        <path class="leg leg--back" d="M3-7v14"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="driving">
+    <g transform="translate(0 418) scale(1.05)" fill="#DA2128">
+      <use href="#car-body" xlink:href="#car-body"/>
+      <g transform="translate(-17 9)"><use class="spin" href="#wheel" xlink:href="#wheel"/></g>
+      <g transform="translate(17 9)"><use class="spin" href="#wheel" xlink:href="#wheel"/></g>
+    </g>
+  </g>
+</svg>
